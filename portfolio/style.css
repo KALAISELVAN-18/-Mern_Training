@@ -1,0 +1,120 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Fira Code", monospace;
+}
+
+body{
+    background:#0d0d0d;
+    color:#00ff88;
+}
+
+/* NAVIGATION */
+nav{
+    width:100%;
+    padding:20px 50px;
+    background:#0d0d0d;
+    border-bottom:1px solid #00ff88;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:#00ff88;
+    text-shadow:0 0 10px #00ff99;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li a{
+    color:#00ff88;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:white;
+    text-shadow:0 0 10px #00ff88;
+}
+
+/* HERO SECTION */
+.hero{
+    width:100%;
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px;
+}
+
+.hero-text h1{
+    font-size:45px;
+}
+
+.hero-text span{
+    color:white;
+}
+
+.hero img{
+    width:330px;
+    border-radius:10px;
+    filter: drop-shadow(0px 0px 15px #00ff88);
+}
+
+/* BUTTONS */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 25px;
+    color:#0d0d0d;
+    background:#00ff88;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* CONTENT PAGES */
+.container{
+    padding:60px;
+}
+
+.container h1{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+/* BLINKING CURSOR */
+.cursor {
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    border-top:1px solid #00ff88;
+    opacity:0.8;
+}
