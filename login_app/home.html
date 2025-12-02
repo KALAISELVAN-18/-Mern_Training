@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        body {
+            background: #0f0f0f;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #00ff6a;
+            padding: 15px;
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #ff5151;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #d63c3c;
+        }
+    </style>
+
+    <script>
+        function logout() {
+            alert("Logged Out 👋");
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>Welcome to the Home Page 🎯</header>
+
+    <div class="content">
+        <h2>Hello User!</h2>
+        <p>You're successfully logged in 🚀</p>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+</body>
+</html>

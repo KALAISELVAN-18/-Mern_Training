@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0px 0px 15px rgba(0,255,100,0.4);
+        }
+
+        h2 {
+            text-align: center;
+            color: #00ff6a;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: none;
+            background: #2a2a2a;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #00ff6a;
+            border: none;
+            font-size: 16px;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00cc57;
+        }
+    </style>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault();
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            // Dummy credentials
+            if (username === "admin" && password === "1234") {
+                alert("Login Successful 🎉");
+                window.location.href = "home.html";
+            } else {
+                alert("Invalid Credentials ❌");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+
+    <form onsubmit="validateLogin(event)">
+        <input type="text" id="username" placeholder="Enter Username" required>
+        <input type="password" id="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
