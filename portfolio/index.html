@@ -11,7 +11,7 @@
     <!-- Header -->
     <header>
         <nav class="navbar">
-            <div class="logo">Kalai<span>selvan</span></div>
+            <div class="logo">KALAI<span>SELVAN</span></div>
             <ul class="menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -47,28 +47,33 @@
         © 2025 Kalaiselvan | Built with ❤️ & Code
     </footer>
 
+    <!-- Typing Script -->
     <script>
         const words = [
-            \"AI & Data Science Student\",
-            \"Web Developer\",
-            \"Problem Solver\",
-            \"Programmer\"
+            "AI & Data Science Student",
+            "Web Developer",
+            "Problem Solver",
+            "Programmer"
         ];
 
-        let i = 0, j = 0, current = \"\", isDeleting = false;
+        let i = 0, j = 0;
+        let current = "";
+        let isDeleting = false;
 
         function type() {
             current = words[i];
             let text = current.slice(0, j);
-            document.getElementById(\"typed\").innerHTML = text + \"|\";
+            document.getElementById("typed").innerHTML = text + "|";
 
-            if(!isDeleting && j < current.length) {
+            if (!isDeleting && j < current.length) {
                 j++;
-            } else if(isDeleting && j > 0) {
+            } else if (isDeleting && j > 0) {
                 j--;
             } else {
                 isDeleting = !isDeleting;
-                if(!isDeleting) i = (i + 1) % words.length;
+                if (!isDeleting) {
+                    i = (i + 1) % words.length;
+                }
             }
 
             setTimeout(type, isDeleting ? 70 : 120);
@@ -76,5 +81,6 @@
 
         type();
     </script>
+
 </body>
 </html>

@@ -417,3 +417,14 @@ footer {
         flex-direction:column;
     }
 }
+
+
+/* Fix navbar overlapping issue */
+section {
+    padding-top: 100px;
+}
+
+/* Fix hero page specifically */
+.hero {
+    padding-top: 75px;
+}
