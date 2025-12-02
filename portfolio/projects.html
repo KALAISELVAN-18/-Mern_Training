@@ -1,42 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Projects | Kalai</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Kalaiselvan</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav>
-    <h2>$ kalai.dev</h2>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="skills.html">skills</a></li>
-        <li><a href="projects.html" style="color:white; text-shadow:0 0 10px #00ff88;">projects</a></li>
-        <li><a href="certificates.html">certificates</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-</nav>
+<header>
+    <nav class="navbar">
+        <div class="logo">Kalai<span>selvan</span></div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="coding-profiles.html">Coding Profiles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class="container">
-<p>> fetching repositories ... <span class="cursor">|</span></p><br>
 
-<h1>Projects</h1><br>
+<section class="section">
+    <h2>Projects</h2>
+    <p class="subtitle">Some of the work I've built and explored.</p>
 
-<p>📌 <strong>Employee Management System</strong><br>
-Tech: Python, Flask, HTML, CSS<br></p><br>
+    <div class="project-container">
 
-<p>📌 <strong>Blog Website</strong><br>
-Tech: React, Node.js, JavaScript, HTML, CSS</p><br>
+        <!-- Medicine Inventory -->
+        <div class="project-card">
+            <h3>Medicine Inventory for Pharmacy</h3>
+            <p>
+                A Spring Boot application to manage medicine stock, supplier details, and expiry tracking with database storage and admin UI.
+            </p>
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Thymeleaf</span>
+            <div class="project-links">
+                <a href="#" class="btn small">GitHub</a>
+                <a href="#" class="btn outline small">Live Demo</a>
+            </div>
+        </div>
 
-<p>📌 <strong>Medicine Inventory System</strong><br>
-Tech: Java, Spring Boot, MySQL, Thymeleaf</p><br>
+        <!-- Employee Management -->
+        <div class="project-card">
+            <h3>Employee Management System</h3>
+            <p>
+                A Flask-based CRUD app for managing employee data, attendance, and salary records with CSV support and admin authentication.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <div class="project-links">
+                <a href="#" class="btn small">GitHub</a>
+                <a href="#" class="btn outline small">Live Demo</a>
+            </div>
+        </div>
 
-<p>> repositories synced successfully ✔</p>
-</div>
+        <!-- Blog Website -->
+        <div class="project-card">
+            <h3>Blog Website</h3>
+            <p>
+                A responsive blogging platform where users can create, edit, and manage posts with authentication and UI components.
+            </p>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <div class="project-links">
+                <a href="#" class="btn small">GitHub</a>
+                <a href="#" class="btn outline small">Live Demo</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 <footer>
-© 2025 Kalaiselvan | Built with HTML, CSS & Passion 🚀
+    © 2025 Kalaiselvan | Projects built with curiosity & code.
 </footer>
 
 </body>

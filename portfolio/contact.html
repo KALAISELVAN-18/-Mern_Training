@@ -1,39 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact | Kalai</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Kalaiselvan</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav>
-    <h2>$ kalai.dev</h2>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="skills.html">skills</a></li>
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="certificates.html">certificates</a></li>
-        <li><a href="contact.html" style="color:white; text-shadow:0 0 10px #00ff88;">contact</a></li>
-    </ul>
-</nav>
+<header>
+    <nav class="navbar">
+        <div class="logo">Kalai<span>selvan</span></div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="coding-profiles.html">Coding Profiles</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class="container">
-<p>> pinging kalai.dev ... <span class="cursor">|</span></p><br>
 
-<h1>Contact Me</h1><br>
+<section class="section contact-section">
 
-<p>📞 Phone: <strong>+91 6369417662</strong></p>
-<p>📧 Email: <strong>kalai2808200@gmail.com</strong></p>
-<p>🔗 LinkedIn: <strong>kalaiselvan_m</strong></p>
-<p>💻 LeetCode | CodeChef | HackerRank | GitHub</p>
+    <h2>Contact Me</h2>
+    <p class="subtitle">Feel free to reach out for opportunities or collaboration.</p>
 
-<br>
-<p>> connection established ✔</p>
-</div>
+    <div class="contact-container">
+
+        <div class="contact-info-box">
+            <h3>Get in Touch</h3>
+            <p><strong>📧 Email:</strong> kalai2808200@gmail.com</p>
+            <p><strong>📞 Phone:</strong> +91 63694 17662</p>
+            <p><strong>📍 Location:</strong> Coimbatore, India</p>
+
+            <div class="social-links">
+                <a href="#" class="btn small">GitHub</a>
+                <a href="#" class="btn small">LinkedIn</a>
+                <a href="mailto:kalai2808200@gmail.com" class="btn outline small">Gmail</a>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Enter your name" required />
+            <input type="email" placeholder="Enter your email" required />
+            <textarea rows="5" placeholder="Your message..." required></textarea>
+
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+</section>
 
 <footer>
-© 2025 Kalaiselvan | Built with HTML, CSS & Passion 🚀
+    © 2025 Kalaiselvan | Let's collaborate and build something great.
 </footer>
 
 </body>

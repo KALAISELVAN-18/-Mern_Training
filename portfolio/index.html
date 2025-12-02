@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalaiselvan | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav>
-    <h2>$ kalai.dev</h2>
-    <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="skills.html">skills</a></li>
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="certificates.html">certificates</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-</nav>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kalai<span>selvan</span></div>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="coding-profiles.html">Coding Profiles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <h1>Welcome<span class="cursor">|</span></h1>
-        <p>I'm <strong>Kalaiselvan</strong> — an AI & DS student, web developer and competitive programmer.</p>
-        <a href="about.html" class="btn">Run: About Me</a>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="profile-pic">
+            <img src="profile.jpg" alt="profile" />
+        </div>
 
-    <img src="assets/me.jpg" alt="Profile Picture">
-</section>
+        <h1>Hello, I'm <span>Kalaiselvan 👨‍💻</span></h1>
 
-<footer>
-    © 2025 Kalaiselvan | Built with HTML, CSS & Passion 🚀
-</footer>
+        <p class="typing-text">
+            <span id="typed"></span>
+        </p>
 
+        <div class="hero-btns">
+            <a href="contact.html" class="btn">Hire Me</a>
+            <a href="Kalai_Resume.pdf" download class="btn outline">Download CV</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Kalaiselvan | Built with ❤️ & Code
+    </footer>
+
+    <script>
+        const words = [
+            \"AI & Data Science Student\",
+            \"Web Developer\",
+            \"Problem Solver\",
+            \"Programmer\"
+        ];
+
+        let i = 0, j = 0, current = \"\", isDeleting = false;
+
+        function type() {
+            current = words[i];
+            let text = current.slice(0, j);
+            document.getElementById(\"typed\").innerHTML = text + \"|\";
+
+            if(!isDeleting && j < current.length) {
+                j++;
+            } else if(isDeleting && j > 0) {
+                j--;
+            } else {
+                isDeleting = !isDeleting;
+                if(!isDeleting) i = (i + 1) % words.length;
+            }
+
+            setTimeout(type, isDeleting ? 70 : 120);
+        }
+
+        type();
+    </script>
 </body>
 </html>
